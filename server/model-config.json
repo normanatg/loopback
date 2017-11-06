@@ -14,25 +14,49 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "myMongo"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "myMongo",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "myMongo",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "myMongo",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "myMongo",
+    "public": false
+  },
+  "student": {
+    "dataSource": "myMongo",
+    "public": true
+  },
+  "administator": {
+    "dataSource": "myMongo",
+    "public": true
+  },
+  "Instructor": {
+    "dataSource": "myMongo",
+    "public": false
+  },
+  "courses": {
+    "dataSource": "myMongo",
+    "public": false
+  },
+  "registrations": {
+    "dataSource": "myMongo",
+    "public": false
+  },
+  "courseratings": {
+    "dataSource": "myMongo",
     "public": false
   }
 }
