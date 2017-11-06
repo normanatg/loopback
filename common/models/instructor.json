@@ -20,13 +20,20 @@
   },
   "validations": [],
   "relations": {
-    "courses":{
-      "type":"hasMany",
-      "model":"courses",
-      "foreignKey":"IdInstructor",
-      "through":"courses"
+    "courses": {
+      "type": "hasMany",
+      "model": "courses",
+      "foreignKey": "IdInstructor",
+      "through": "courses"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

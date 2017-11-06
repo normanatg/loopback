@@ -45,11 +45,11 @@
   },
   "Instructor": {
     "dataSource": "myMongo",
-    "public": false
+    "public": true
   },
   "courses": {
     "dataSource": "myMongo",
-    "public": false
+    "public": true
   },
   "registrations": {
     "dataSource": "myMongo",

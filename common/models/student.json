@@ -17,12 +17,19 @@
   },
   "validations": [],
   "relations": {
-    "registrations":{
-      "type":"hasMany",
-      "model":"registrations",
-      "foreingKey":"IdStudent"
+    "registrations": {
+      "type": "hasMany",
+      "model": "registrations",
+      "foreingKey": "IdStudent"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
