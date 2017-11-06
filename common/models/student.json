@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "registrations":{
+      "type":"hasMany",
+      "model":"registrations",
+      "foreingKey":"IdStudent"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -19,7 +19,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "courses":{
+      "type":"hasMany",
+      "model":"courses",
+      "foreignKey":"IdInstructor",
+      "through":"courses"
+    }
+  },
   "acls": [],
   "methods": {}
 }
