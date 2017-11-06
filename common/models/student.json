@@ -24,7 +24,7 @@
     }
   },
   "acls": [
-   {
+    {
       "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "$authenticated",
@@ -35,6 +35,13 @@
       "principalType": "ROLE",
       "principalId": "ADMINISTRATOR",
       "permission": "ALLOW"
-    }],
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

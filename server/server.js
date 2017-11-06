@@ -19,8 +19,7 @@ app.start = function() {
 };
 
 app.use(loopback.token({
-  model: app.models.accessToken,
-  currentUserLiteral: 'greet'
+  model: app.models.accessToken
 }));
 
 // Bootstrap the application, configure models, datasources and middleware.
