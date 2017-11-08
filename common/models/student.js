@@ -3,11 +3,12 @@
 module.exports = function(Student) {
 	Student.validatesUniquenessOf('email',{message:"Solo puede tener un correo"});
   	Student.registro = function (clase, cb) {
-  		var curso = require("courses");
+  		Student.courses.create({studentId:"5a034c320d097b61c85830d2"
+  				,coursesId:"5a034c770d097b61c85830d3"},function (err,val) {
+  			console.log(err);
+  		});
   		
-    	var response;
-    	response = "Listo"+clase;
-    	cb(null, response);
+    	cb(null, "Listo");
   	};
 
   	Student.remoteMethod(

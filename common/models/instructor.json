@@ -1,5 +1,6 @@
 {
   "name": "Instructor",
+  "plural": "Instructors",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -19,14 +20,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "courses": {
-      "type": "hasMany",
-      "model": "courses",
-      "foreignKey": "IdInstructor",
-      "through": "courses"
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",

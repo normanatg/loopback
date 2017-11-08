@@ -35,28 +35,20 @@
     "dataSource": "myMongo",
     "public": false
   },
-  "student": {
+  "Student": {
     "dataSource": "myMongo",
     "public": true
   },
-  "administator": {
+  "Administrator": {
+    "dataSource": "myMongo",
+    "public": true
+  },
+  "Course": {
     "dataSource": "myMongo",
     "public": true
   },
   "Instructor": {
     "dataSource": "myMongo",
     "public": true
-  },
-  "courses": {
-    "dataSource": "myMongo",
-    "public": true
-  },
-  "registrations": {
-    "dataSource": "myMongo",
-    "public": false
-  },
-  "courseratings": {
-    "dataSource": "myMongo",
-    "public": false
   }
 }

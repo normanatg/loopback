@@ -1,6 +1,6 @@
 {
-  "name": "student",
-  "plural": "students",
+  "name": "Student",
+  "plural": "Students",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -17,25 +17,13 @@
   },
   "validations": [],
   "relations": {
-    "registrations": {
-      "type": "hasMany",
-      "model": "registrations",
-      "foreingKey": "IdStudent"
+    "courses": {
+      "type": "hasAndBelongsToMany",
+      "model": "Course",
+      "foreignKey": ""
     }
   },
   "acls": [
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "WRITE",
-      "principalType": "ROLE",
-      "principalId": "ADMINISTRATOR",
-      "permission": "ALLOW"
-    },
     {
       "accessType": "*",
       "principalType": "ROLE",

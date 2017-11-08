@@ -1,5 +1,6 @@
 {
-  "name": "courses",
+  "name": "Course",
+  "plural": "Courses",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,28 +11,12 @@
       "type": "string",
       "required": true
     },
-    "instructor": {
-      "type": "string",
-      "required": true
-    },
     "description": {
       "type": "string"
     }
   },
   "validations": [],
-  "relations": {
-    "registrations": {
-      "type": "hasMany",
-      "model": "registrations",
-      "foreignKey": "IdCourse"
-    },
-    "courseratings": {
-      "type": "hasMany",
-      "model": "courseratings",
-      "foreignKey": "IdCourse",
-      "through": "courseratings"
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",

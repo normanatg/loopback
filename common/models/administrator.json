@@ -1,6 +1,6 @@
 {
-  "name": "administator",
-  "plural": "administrators",
+  "name": "Administrator",
+  "plural": "Administrators",
   "base": "User",
   "idInjection": true,
   "options": {
